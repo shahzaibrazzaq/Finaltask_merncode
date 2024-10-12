@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  mern_app_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      no_cache: true
+    image: mern_image_updated
+    ports:
+      - "5000:5000"
+    container_name: mern_app_container
+    hostname: mern_app
