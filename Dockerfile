@@ -29,7 +29,7 @@ RUN curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc | \
 WORKDIR /opt/app
 
 # Clone your project repository
-ADD https://github.com/shahzaibrazzaq/iac-final-project-mern-stack.git .
+RUN git clone https://github.com/shahzaibrazzaq/Finaltask_merncode.git .
 
 # Install project dependencies for backend
 RUN npm install
